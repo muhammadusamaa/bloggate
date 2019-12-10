@@ -1,0 +1,52 @@
+.home_title {
+ color: #C5332C;
+ font-style: italic;
+ text-align: center;
+ font-size: 40px;
+}
+
+.log_in_box {
+    height: 400px;
+  	width: 300px;
+  	margin: auto;
+  	border: 3px solid white;	
+}
+
+.field {
+	padding: 10px;
+	color: white;
+}
+
+
+.sign_up {
+position: absolute;
+text-align: center;
+right: 510px;
+top: 400px;
+color: #C5332C;
+font-style: italic;
+font-size: 30px;
+
+}
+
+.sign_in {
+	position: absolute;
+	right: 625px;
+	top: 400px;
+	font-style: italic;
+	font-size: 30px;
+}
+
+.bk {
+position: absolute;
+font-style: italic;
+bottom: 150px;
+right: 650px;
+color: #C5332C;
+font-size: 20px;
+}	
+
+.error_msg {
+color: white;
+}
+

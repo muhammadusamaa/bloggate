@@ -1,0 +1,73 @@
+// Place all the styles related to the articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+@import "home";
+
+.text_box {
+	height: 200px;
+	margin: auto;
+	}
+
+.btn_s {
+ margib: auto;
+ width: 20px;
+}
+
+.l_list_icon {
+position: absolute;
+right: 510px;
+color: #C5332C;
+top: 38px;
+font-size: 25px;
+}
+
+.r_list_icon {
+position: absolute;
+left: 510px;
+color: #C5332C;
+top: 38px;
+font-size: 25px;
+}
+
+.title_list {
+color: #C5332C;
+font-size: 25px;
+font-style: italic;
+}
+
+.show_btn {	
+font-style: italic;
+position: absolute;
+right: 150px;
+font-size: 20px;
+}
+.edit_btn {
+font-style: italic;
+position: absolute;
+right: 100px;
+font-size: 20px;
+}
+
+.delete_btn {
+font-style: italic;
+position: absolute;
+right: 0px;
+}
+.add_articles {
+ position: absolute;
+ font_size: 35px;
+ font-style: italic;
+ color: #C5332C;
+ right: 20px;
+ top: 60px;
+}
+
+.article_text {
+border: 2px solid white;
+}
+
+p{
+color: white; 
+}
+

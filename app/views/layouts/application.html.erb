@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html class="main_color">
+  <head>
+    <title>Bloggate </title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+    <%= yield %>
+
+    <footer class="footer">
+     <nav>
+        <ul>
+          <li>ABOUT US</li>
+          <li>SUPPORT</li>
+          <li>PRESS</li>
+          <li>API</li>
+          <li>PRIVACY</li>
+          <li>TERMS</li>
+          <li>DIRECTORY</li>
+          <li>PROFILES</li>
+          <li>HASHTAGS</li>
+          <li>LANGUAGE</li>
+        </ul>
+        <p> © 2020 Bloggate </p>
+      </nav>
+    </footer>
+  </body>
+</html>
