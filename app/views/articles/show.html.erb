@@ -1,11 +1,13 @@
-<p>
-  <strong>Title:</strong>
-  <%= @article.title %>
-</p>
+<h1 class="home_title">Article</h1>
+<div class="article_text">
+	<p>
+	<strong class="title_list">Title:</strong>
+	<%= @article.title %>
+	</p>
  
-<p>
-  <strong>Text:</strong>
-  <%= @article.text %>
-</p>
- 
-<%= link_to 'Back', articles_path %>
+	<p>
+	  <strong class="title_list">Text:</strong>
+	  <%= @article.text %>
+	</p>
+</div>
+<a href="http://localhost:3000/articles" class="bk btn-5">Back</a>
