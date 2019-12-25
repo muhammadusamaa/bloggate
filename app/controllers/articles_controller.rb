@@ -14,7 +14,8 @@ class ArticlesController < ApplicationController
 
 	
 	def edit
-    @article = current_user.articles.find(params[:id])
+    @article = Article.find(params[:id])
+    redirect_to  articles_path unless signed_in_user?(@article) 
   end
 
 
@@ -45,7 +46,11 @@ class ArticlesController < ApplicationController
   end
     
   private
-   def article_params
-       params.require(:article).permit(:title, :text, :user_id)
-    end
+  def article_params
+    params.require(:article).permit(:title, :text, :user_id)
+  end
+    
+  def signed_in_user?(article)
+    current_user.id == article.user_id
+  end
 end

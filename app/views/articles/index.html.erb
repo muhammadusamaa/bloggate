@@ -1,23 +1,24 @@
 <h1 class="home_title">Listing articles</h1>
 <a href="http://localhost:3000/articles/new" class="add_articles btn-5">Add Articles</a>
-
-<div>
-    <div> 
-     <i class="fa fa-list r_list_icon"></i>
-  	 <i class="fa fa-list l_list_icon"></i>
-	</div>
-	<% @articles.each do |article| %>
-  		<div class="article_text">
+<div> 
+    <i class="fa fa-list r_list_icon"></i>
+    <i class="fa fa-list l_list_icon"></i>
+  </div>
+<div class="articles_list">
+  <% @articles.each do |article| %>
+  		<br><br><div class="article_text">
     	  <strong class="title_list">Title:</strong><p>{<%= article.title %>}</p>
     	  <div>
     	  	 <strong class="title_list">Text:</strong><p>"<%= article.text %>"</p><br>
-    	  	</div>
+    	  </div>
   		</div>
  		<div>
        <a href="http://localhost:3000/articles/<%=article.id%>" class="show_btn btn-5">Show</a>
-       <a href="http://localhost:3000/articles/<%=article.id%>/edit" class="edit_btn btn-5">Edit</a>
-       <%= button_to 'Destroy', article_path(article), method: :delete,
-              data: { confirm: 'Are you sure?' } %><br><br>
- 	    </div>
+       <% if current_user.id == article.user_id %>
+         <a href="http://localhost:3000/articles/<%=article.id%>/edit" class="edit_btn btn-5">Edit</a>
+          <%= button_to 'Destroy', article_path(article), method: :delete,
+              data: { confirm: 'Are you sure?' } %>
+        <% end %>
+      </div>
 	<% end %>
 </div>
