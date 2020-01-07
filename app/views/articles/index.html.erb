@@ -10,8 +10,8 @@
     	  <strong class="title_list">Title:</strong><p>{<%= article.title %>}</p>
     	  <div>
     	  	 <strong class="title_list">Text:</strong><p>"<%= article.text %>"</p><br>
-    	  </div>
-  		</div>
+        </div>
+      </div>
  		<div>
        <a href="http://localhost:3000/articles/<%=article.id%>" class="show_btn btn-5">Show</a>
        <% if current_user.id == article.user_id %>
@@ -21,4 +21,5 @@
         <% end %>
       </div>
 	<% end %>
+  <div class="loging_out btn-5"><%= link_to('Logout', destroy_user_session_path) %></div>
 </div>
