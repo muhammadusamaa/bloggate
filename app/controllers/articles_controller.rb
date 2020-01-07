@@ -47,7 +47,7 @@ class ArticlesController < ApplicationController
     
   private
   def article_params
-    params.require(:article).permit(:title, :text, :user_id)
+    params.require(:article).permit(:title, :text, :image, :user_id)
   end
     
   def signed_in_user?(article)

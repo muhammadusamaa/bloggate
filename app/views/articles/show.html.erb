@@ -9,5 +9,10 @@
 	  <strong class="title_list">Text:</strong>
 	  <%= @article.text %>
 	</p>
+	<p>
+		<strong class="title_list">Image:</strong>
+		<%= image_tag @article.image_url.to_s if @article.image_url.present? %>
+	
+	</p>
 </div>
 <a href="http://localhost:3000/articles" class="bk btn-5">Back</a>
